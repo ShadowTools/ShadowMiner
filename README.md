@@ -1,6 +1,6 @@
 # ShadowMiner
 
-最安全透明的矿工软件, 支持ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持自动超频, 加密转发模式, 支持抽水管理, 连接信息及抽水份额显示
+矿工软件, 支持ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水), 自动超频, 加密转发, 网络信息及抽水份额显示
 
 <img width="1076" height="612" src="https://github.com/ShadowTools/ShadowMiner/blob/main/ShadowMiner.JPG?raw=true"/> 
 
@@ -34,8 +34,9 @@
   4. 支持SOCKS5代理
   5. 需配合ShadowProxy使用, 定期自动更新代理端证书
 * 支持抽水管理
-  1. 支持抽水 允许/拦截/返还(部分币种) 模式, 避免抽水导致的信息泄露
-  2. 抽水地址, 加密方式与份额信息显示
+  1. 允许模式: 建议配合加密转发使用(加密转发内核抽水数据，避免信息泄露)
+  2. 拦截模式: 屏蔽抽水连接(可能会导致部分内核工作异常)
+  3. 返还模式: 抽水返还用户(部分币种/内核支持)
 
 ## 透明:
 * 网络日志信息全显示
@@ -47,11 +48,21 @@
 ## 费率:
   * <0.5%
 ### Note:
-费率公开透明, 在网络日志中可查看地址, 加密方式及份额
+费率公开透明, 在网络日志可实时查看费率, 地址, 加密方式及份额
 
 ## 使用说明
 
 解压后运行ShadowMiner.exe
+### 安全性建议
+* 安全排名:
+  * 矿池: SSL/TLS矿池 > 非SSL/TLS矿池
+  * 代理: 加密转发代理 > SSL/TLS代理 > 直连
+  * 叠加SOCKS5代理使用可增加安全性
+* 若使用非SSL矿池, 推荐使用加密转发模式(SSL/TLS代理安全性差且无法加密抽水数据, 导致信息泄露)
+* 若使用ShadowProxy(SSL/TLS代理或二次加密代理), 请打开证书周期自更新功能
+* 推荐的组合:
+    1. SSL/TLS矿池 + 加密转发 + SOCKS5代理
+    2. SSL/TLS矿池 + 加密转发
 
 ----------------------------------------------------------------------------------------------
 

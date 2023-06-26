@@ -1,6 +1,6 @@
 # ShadowMiner
 
-矿工软件, 支持CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水), 自动超频, 加密转发, 网络信息及抽水份额显示
+矿工软件, 支持CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/IRON(Iron fish)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水), 自动超频, 加密转发, 网络信息及抽水份额显示
 
 <img width="1076" height="612" src="https://github.com/ShadowTools/ShadowMiner/blob/main/ShadowMiner.JPG?raw=true"/> 
 
@@ -12,7 +12,7 @@
 ## 功能:
 * 支持Windows系统
 * 支持NVIDIA GPU
-* 支持CFX/ERG/ETC/ETHF/ETHW/KAS/RVN币种
+* 支持CFX/ERG/ETC/ETHF/ETHW/IRON/KAS/RVN币种
 * 支持GMiner/lolMiner/NBMiner/TrexMiner内核
 * 支持内核抽水管理
 * 支持在线获取超频参数
@@ -67,6 +67,11 @@
 ----------------------------------------------------------------------------------------------
 
 ## 版本更新说明:
+### 1.0.3
+* Changes:
+  * 新增对IRON(Iron fish)币种的支持
+  * 优化用户体验
+
 v1.0.2
 * Changes:
   * 修复矿池的兼容性问题

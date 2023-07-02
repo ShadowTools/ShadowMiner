@@ -1,6 +1,6 @@
 # ShadowMiner
 
-矿工软件, 支持CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/IRON(Iron fish)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水), 自动超频, 加密转发, 网络信息及抽水份额显示
+矿工软件, 支持CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/IRON(Iron fish)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水(高收益)), 支持自动超频, 加密转发, 网络信息及抽水份额显示
 
 <img width="1076" height="612" src="https://github.com/ShadowTools/ShadowMiner/blob/main/ShadowMiner.JPG?raw=true"/> 
 
@@ -36,7 +36,7 @@
 * 支持抽水管理
   1. 允许模式: 建议配合加密转发使用(加密转发内核抽水数据，避免信息泄露)
   2. 拦截模式: 屏蔽抽水连接(可能会导致部分内核工作异常)
-  3. 返还模式: 抽水返还用户(部分币种/内核支持)
+  3. 返还模式: 反抽水
 
 ## 透明:
 * 网络日志信息全显示
@@ -45,10 +45,11 @@
   3. 抽水比例与份额
   4. 流量统计信息
 
-## 费率:
-  * <0.5%
+## 高收益:
+  * 低费率 <0.5%
+  * 启用抽水返还模式, 收益提高≈1%
 ### Note:
-费率公开透明, 在网络日志可实时查看费率, 地址, 加密方式及份额
+ 抽水公开透明, 无暗抽, 网络日志实时显示抽水费率, 地址, 加密方式及份额
 
 ## 使用说明
 
@@ -64,15 +65,18 @@
     1. SSL/TLS矿池 + 加密转发 + SOCKS5代理
     2. SSL/TLS矿池 + 加密转发
 
+### 联系我们:
+Telegram: https://t.me/+5yaCgLEEmmszZWY1
+Mail: shadowtools8@gmail.com
 ----------------------------------------------------------------------------------------------
 
 ## 版本更新说明:
-### 1.0.3
+V1.0.3
 * Changes:
   * 新增对IRON(Iron fish)币种的支持
   * 优化用户体验
 
-v1.0.2
+V1.0.2
 * Changes:
   * 修复矿池的兼容性问题
   * 提高代码执行效率

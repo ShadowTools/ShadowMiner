@@ -1,6 +1,6 @@
 # ShadowMiner
 
-矿工软件, 支持ALPH(ALEPHIUM)/CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/IRON(Iron fish)/KAS(Kaspa)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 支持抽水管理模式(抽水加密/抽水拦截/反抽水), 支持自动超频, 加密转发, 网络信息及抽水份额显示
+矿工软件, 支持ALPH(ALEPHIUM)/BEAM/CFX(Conflux)/ERG(Ergo)/ETC(Ethereum Classic)/ETHF(Ethereum Fair)/ETHW((Ethereum Pow)/IRON(Iron fish)/KAS(Kaspa)/KLS(KARLSEN)/RVN(RavenCoin)币种, 支持GMiner/lolMiner/NBMiner/TrexMiner内核, 支持NVIDIA GPU, 抽水管理模式(抽水加密/抽水拦截/反抽水), 支持超频参数搜索, 加密转发, 流量信息及份额显示
 
 <img width="1076" height="612" src="https://github.com/ShadowTools/ShadowMiner/blob/main/ShadowMiner.JPG?raw=true"/> 
 
@@ -36,7 +36,7 @@
 * 支持抽水管理
   1. 允许模式: 建议配合加密转发使用(加密转发内核抽水数据，避免信息泄露)
   2. 拦截模式: 屏蔽抽水连接(可能会导致部分内核工作异常)
-  3. 返还模式: 反抽水
+  3. 返还模式: 返还抽水
 
 ## 透明:
 * 网络日志信息全显示
@@ -49,15 +49,16 @@
 ## 使用说明
 
 解压后运行ShadowMiner.exe
-### 安全性建议
-* 安全排名:
-  * 矿池: SSL/TLS矿池 > 非SSL/TLS矿池
-  * 代理: 加密转发代理 > SSL/TLS代理 > 直连
-  * 叠加SOCKS5代理使用可增加安全性
-* 若使用非SSL矿池, 推荐使用加密转发模式(SSL/TLS代理安全性差且无法加密抽水数据, 导致信息泄露)
-* 若使用ShadowProxy(SSL/TLS代理或二次加密代理), 请打开证书周期自更新功能
+### 安全建议
+* 排序:
+  * 矿池: SSL/TLS > 非SSL/TLS
+  * 代理: 加密转发 > SSL/TLS代理 > 直连
+  * 使用SOCKS5代理可增加安全性
+* 非SSL矿池, 推荐加密转发模式(单独的SSL/TLS代理安全性差且无法加密内核抽水链接)
+* 若使用ShadowProxy(SSL/TLS代理或二次加密代理), 推荐打开证书周期更新功能
 * 推荐的组合:
     1. SSL/TLS矿池 + 加密转发 + SOCKS5代理
     2. SSL/TLS矿池 + 加密转发
-* Telegram: https://t.me/+5yaCgLEEmmszZWY1
+    3. SSL/TLS矿池 + SSL/TLS代理
+    4. SSL/TLS矿池 + 直连
 * Mail: shadowtools8@gmail.com
